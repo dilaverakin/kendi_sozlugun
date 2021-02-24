@@ -1,0 +1,2 @@
+merhaba=hello
+nasıl=how
