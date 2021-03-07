@@ -15,6 +15,7 @@ def sozluk(): #dosyadaki kelimeleri okuyup sözlüklere atıyor
         for i in range(0, len(liste)):
             ing_sozluk[liste[i][0]] = liste[i][1]  # burda sozluge ekleme yapılıyor
             turk_sozluk[liste[i][1]] = liste[i][0]
+
 def test(kelime,islem):
     try:
         if islem == "1":
@@ -98,7 +99,7 @@ while True:
                 while True:
                     sayı = random.randint(0,len(rastgele_turk))
                     rastgele()
-                    cevap=input ("\t\t*** {}***\nKelimesinin İngilizcesi Nedir : ".format(rastgele_turk[sayı]))
+                    cevap=input ("\t\t*** {} ***\nKelimesinin İngilizcesi Nedir : ".format(rastgele_turk[sayı]))
                     if cevap=="q":
                         break
                     elif cevap==rastgele_ing[sayı]:
@@ -110,7 +111,7 @@ while True:
                 while True:
                     sayı = random.randint(0, len(rastgele_turk))
                     rastgele()
-                    cevap = input("\t\t*** {}***\nKelimesinin İngilizcesi Nedir : ".format(rastgele_ing[sayı]))
+                    cevap = input("\t\t*** {} ***\nKelimesinin İngilizcesi Nedir : ".format(rastgele_ing[sayı]))
                     if cevap == "q":
                         break
                     elif cevap == rastgele_turk[sayı]:
